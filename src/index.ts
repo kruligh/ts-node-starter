@@ -3,9 +3,11 @@ import * as express from "express";
 import * as expressWinston from "express-winston";
 import { ApiError, ApiErrorKind, handleUnknownException } from "src/api/errors";
 import { expressLoggerOptions, log } from "src/lib/log";
+import { googleApisAuth } from "src/storage/spreadsheet";
 import { publicRouter } from "./api/public";
 
-// todo check google token
+
+(async () => await googleApisAuth())();
 
 const app = express();
 const port = 3000;
