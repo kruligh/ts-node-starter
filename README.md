@@ -9,6 +9,3 @@ In memory ugly solution
 
 ## storage
 Integration with google-spreadsheet, see for reference https://developers.google.com/sheets/api/quickstart/nodejs
-
-## todos
-Tests examples
